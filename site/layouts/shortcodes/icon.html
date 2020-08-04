@@ -1,0 +1,5 @@
+{{- $name := .Get "name" -}}
+{{- $class := .Get "class" -}}
+{{- $path := printf "%s%s%s" "icons/" $name ".svg" -}}
+
+{{ partial $path (dict "class" $class) }}

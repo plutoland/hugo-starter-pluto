@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="flex flex-col min-h-screen">
+    {{ partial "navbar" . }}
+
+    <div class="my-auto p-8">
+      {{ .Content }}
+    </div>
+
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

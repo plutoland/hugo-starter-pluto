@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"{{ with .Page.Params.html_class }} class="{{ . }}"{{ end }}>
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body{{ with .Page.Params.body_class }} class="{{ . }}"{{ end }}>
+
+    <div class="">
+      {{ .Content }}
+    </div>
+
+    {{ partial "scripts" . }}
+  </body>
+</html>

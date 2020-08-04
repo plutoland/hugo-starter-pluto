@@ -1,0 +1,21 @@
+languageCode: 'en'
+title: 'Pluto Hugo Starter'
+baseURL: '/'
+
+metaDataFormat: 'yaml'
+enableInlineShortcodes: true
+enableRobotsTXT: false
+disableKinds: ['404', 'taxonomy', 'taxonomyTerm', 'RSS', 'sitemap']
+
+buildDrafts: false
+buildFuture: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+  description: 'A Hugo starter template for new projects powered by Pluto'

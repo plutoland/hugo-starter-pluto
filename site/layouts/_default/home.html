@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="">
+    {{ partial "navbar" . }}
+    {{ partial "hero" . }}
+
+    <div class="">
+      {{ .Content }}
+    </div>
+
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

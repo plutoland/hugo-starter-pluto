@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+{{ $stylesheet := .Site.Data.webpack.main.css }}
+{{ with $stylesheet }}
+  <link href="{{ relURL . }}" rel="stylesheet">
+{{ end }}

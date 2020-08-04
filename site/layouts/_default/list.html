@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="">
+    {{ partial "navbar" . }}
+
+    <div class="">
+      <ul class="">
+        {{ range .Pages }}
+        <li class="">
+          <a href="{{ .Permalink }}" class="">{{.Title}}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>
